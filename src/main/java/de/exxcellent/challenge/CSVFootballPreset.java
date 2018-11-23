@@ -1,7 +1,7 @@
 package de.exxcellent.challenge;
 import com.opencsv.bean.CsvBindByName;
 
-public class CSVWeatherPreset {
+public class CSVFootballPreset {
 
     /*This class defines the which columns of the .CSV are regarded by the CSV-reader.
     To solve this task it´s important to extract the following data:
@@ -9,13 +9,13 @@ public class CSVWeatherPreset {
     The crucial columns are recognized by their names in the CSV-file header row.
     */
 
-    @CsvBindByName(column = "Day")  //identifier
+    @CsvBindByName(column = "Team")  //identifier
     private String day;
 
-    @CsvBindByName(column = "MxT")  // minuend
+    @CsvBindByName(column = "Goals")  // minuend
     private int maxTemp;
 
-    @CsvBindByName(column = "MnT")  // subtrahend
+    @CsvBindByName(column = "Goals Allowed")  // subtrahend
     private int minTemp;
 
 
