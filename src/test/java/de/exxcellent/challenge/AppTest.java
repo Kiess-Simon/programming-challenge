@@ -11,6 +11,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class AppTest {
 
+    @Test
+    public void testSetProperties() {
+        String expIden = "Hello there";
+        int expMinu = 25;
+        int expSubt = 5;
+        int expDiff = 20;
+
+        CSVRowObject testObj = new CSVRowObject();
+        testObj.setProperties("Hello there", 25, 5);
+        assertEquals(expIden,testObj.vIdentifier,"Iden ok");
+        assertEquals(expDiff, testObj.vDifference,"Diff ok");
+    }
+
     private String successLabel = "not successful";
 
     @BeforeEach
