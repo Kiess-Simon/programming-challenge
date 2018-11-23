@@ -1,6 +1,9 @@
+/*
 import com.opencsv.bean.*;
 import de.exxcellent.challenge.CSVRowObject;
 import de.exxcellent.challenge.CSVUser;
+import de.exxcellent.challenge.DataStorage;
+
 
 import java.io.*;
 import java.lang.reflect.Array;
@@ -8,9 +11,9 @@ import java.nio.file.*;
 import java.util.*;
 import java.util.stream.*;
 
-/* the sole purpose of this class is to get familiar with the OpenCSV library and the OpenCSVReader.
-   Code examples from "https://www.callicoder.com/java-read-write-csv-file-opencsv/".
-*/
+// The sole purpose of this class is to get familiar with the OpenCSV library and the OpenCSVReader.
+// Code examples from "https://www.callicoder.com/java-read-write-csv-file-opencsv/".
+
 
 public class OpenCSVReader {
     private static final String SAMPLE_CSV_FILE_PATH = "C:\\Users\\Simon\\IdeaProjects\\programming-challenge\\src\\main\\resources\\de\\exxcellent\\challenge\\test.csv";
@@ -23,7 +26,7 @@ public class OpenCSVReader {
                     .withIgnoreLeadingWhiteSpace(true)
                     .build();
 
-            ArrayList<TestCSV> dataList = new ArrayList<>();
+            ArrayList<DataStorage> dataList = new ArrayList<>();
 
             Iterator<CSVUser> csvUserIterator = csvToBean.iterator();
 
@@ -31,7 +34,7 @@ public class OpenCSVReader {
                 //CSVRowObject csvObj = new CSVRowObject().setProperties(csvUser.getC1(),12,10);
 
                 CSVUser csvUser = csvUserIterator.next();
-                TestCSV testCSV = new TestCSV();
+                DataStorage testCSV = new DataStorage();
                String s;
                int x;
                s = csvUser.getC1();
@@ -55,3 +58,4 @@ public class OpenCSVReader {
         }
     }
 }
+*/

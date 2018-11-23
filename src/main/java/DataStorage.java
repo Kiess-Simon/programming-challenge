@@ -1,4 +1,6 @@
-public class TestCSV {
+package de.exxcellent.challenge;
+
+public class DataStorage {
     String ident;
     int diff;
 
@@ -9,3 +11,4 @@ public class TestCSV {
         diff = difference;
     }
 }
+

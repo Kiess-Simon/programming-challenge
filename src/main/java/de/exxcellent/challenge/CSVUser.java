@@ -1,3 +1,4 @@
+/*
 package de.exxcellent.challenge;
 import com.opencsv.bean.CsvBindByName;
 
@@ -29,3 +30,4 @@ public class CSVUser{
         return (this.c2 - this.c3);
     }
 }
+*/
